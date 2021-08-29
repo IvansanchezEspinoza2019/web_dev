@@ -1,0 +1,143 @@
+
+body, .name-photo{
+    background-color: rgb(216, 216, 216);
+    font-size: 18px;
+}
+/* Photo and name */
+.name-photo{
+    position: relative;
+}
+.name-photo img{
+    border-radius: 50%;
+}
+.name-photo #name{
+    position: absolute;
+    font-weight: bold;
+    font-size: 48px;
+    top: 20px;
+    left: 300px;
+}
+.name-photo #last-name{
+    position: absolute;
+    font-size: 48px;
+    top: 70px;
+    left: 300px;
+}
+/* All sections and h3 headers*/
+section{
+    background-color: white;
+    padding: 20px;
+    padding-left: 100px;
+    border-radius: 15px;
+}
+h3 {
+    padding: 0;
+    margin: 0
+}
+h4 {
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Education section */
+.education-item {
+    position:relative;
+}
+.education-item .title {
+    font-weight: bold;
+}
+.education-item .date {
+    position: absolute;
+    right: 20px;
+    font-weight: bold;
+}
+.education-item .school-name::before{
+    content: "\a";
+    white-space: pre;
+}
+.education-item .school-name::after {
+    content: "\a";
+    white-space: pre;
+}
+/* Skills*/
+.skill-item .skill-name{
+    width: 120px;
+    max-width: 150px;
+}
+.skill-item .skill-level{
+    font-weight: bold;
+    margin-left: 50px;
+}
+/* Job experience*/
+.job{
+    position: relative;
+}
+.job .job-title{
+    font-weight: bold;
+}
+.job .date{
+    position: absolute;
+    right: 20px;
+    font-weight: bold;
+}
+
+.job .position::before, .position::after{
+    content: "\a";
+    white-space: pre;
+}
+.job .tasks{
+    margin-left: 50px;
+    margin-bottom: 10px;
+    margin-top: 10px
+}
+/* Projects*/
+.project-item {
+    position: relative;
+}
+.project-item .project-title{
+    font-weight: bold;
+}
+.project-item .date{
+    position: absolute;
+    right: 20px;
+    font-weight: bold;
+}
+.project-item .place::before, .place::after{
+    content: "\a";
+    white-space: pre;
+}
+
+.project-item .description{
+    margin-left: 50px;
+}
+/* Software*/
+.software-item .software-name{
+    width: 250px;
+}
+
+.software-item .level{
+    font-weight: bold;
+    margin-left: 50px;
+}
+/* Languages */
+.languages .level{
+    font-weight: bold;
+    margin-left: 50px;
+}
+/* references */
+.person{
+    position: relative;
+}
+.person .name{
+    font-weight: bold;
+}
+.person .position{
+    position: absolute;
+    font-weight: bold;
+    right: 20px;
+}
+.person .company::before, .company::after{
+    content: "\a";
+    white-space: pre;
+}
