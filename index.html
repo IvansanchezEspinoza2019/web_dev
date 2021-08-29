@@ -4,22 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>My Resume</title>
 </head>
 <body>
 
     <main>
         <section class="name-photo">
-            <img src="profile-photo.jpg" width="150" height="150"> <span>EDGAR IVÁN SANCHEZ ESPINOZA</span>
+            <img src="profile-photo.jpg" width="150" height="150"> <span id="name">EDGAR IVÁN</span><span id="last-name">SANCHEZ ESPINOZA</span>
         </section>
 
         <br>
+        
+        <h3>CONTACT</h3>
+        <hr>
         <section class="contact">
-            <h3>CONTACT</h3>
+            <h4>ABOUT ME</h4>
+            <p>I am a Mexican developer of 23 years old who are apasionate about software development and world technology in general</p>
             <div class="contact-item">
-                <div class="contact-item">
-                    <p>Mexican, 23 years old</p>
-                </div>
+                <h4>CONTACT INFO</h4>
                 <img src="whatsapp-logo.png" width="13" height="13"> <span> 555 5555 555</span>
             </div>
 
@@ -29,75 +32,80 @@
         </section>
 
         <br>
+        <h3>EDUCATION</h3>
         <hr>
         <section class="education">
-            <h3>EDUCATION</h3>
-
             <div class="education-item">
-                <span>2013-2016</span>    <span><strong>Highschool</strong></span>
-                <br>
-                <span>Guadalajara, MX</span> <span><strong>Preparatoria No.11 UDG</strong></span>
+                <span class="title">Highschool</span> <span class="date">2013-2016</span>    
+                <span class="school-name">Preparatoria No.11 UDG</span>
+                <span class="place">Guadalajara, MX</span>
             </div>
 
             <br>
             <div class="education-item">
-                <span>2017-Present</span>    <span><strong>Computer Engineer</strong></span>
-                <br>
-                <span>Guadalajara, MX</span> <span><strong>Centro Universitario de Ciencias Exactas y Ingenierias (CUCEI)</strong></span>
+                <span class="title">Computer Engineer</span><span class="date">2017-Present</span> 
+                <span class="school-name">Centro Universitario de Ciencias Exactas y Ingenierias (CUCEI)</span>
+                <span class="place">Guadalajara, MX</span> 
             </div>
         </section>
     
-
         <br>
+        <h3>SKILLS</h3>
         <hr>
         <section class="skills">
-            <h3>SKILLS</h3>
-
+            <h4>HARD SKILLS</h4>
             <div class="skill-item">
-                <span>C/C++: </span><span>          <strong>70%</strong></span>
+                <span class="skill-name">C/C++ </span><span class="skill-level">(Intermediate)</span>
             </div>
 
             <div class="skill-item">
-                <span>Python: </span>                <strong>80%</strong></span>
+                <span class="skill-name">Python </span><span class="skill-level">(Intermediate)</span>
             </div>
 
             <div class="skill-item">
-                <span>Nodejs: </span>                <strong>60%</strong></span>
+                <span class="skill-name">Nodejs </span> <span class="skill-level">(Basic)</span>
             </div>
-               
+
+            <h4>SOFT SKILLS</h4>
+            <div class="skill-item">
+                <span class="skill-name">Team-working</span>
+            </div>
+            <div class="skill-item">
+                <span class="skill-name">Responsible</span>
+            </div>
         </section>
 
         <br>
+        <h3>JOB EXPERIENCE</h3>
         <hr>
         <section class="experience">
-            <h3>JOB EXPERIENCE</h3>
-
             <div class="job">
-                <span>March 10, 2021 - Present</span>    <br> 
-                <span><strong>Talent-Network,</strong></span> <br>
-                <span>Backend Developer</span> <br>
-                <span>I am in charge of developing software solutions for the company. Tasks like creating databases, server-side systems and more.</span>
+                <span class="job-title">Talent-Network</span>
+                <span class="date">March 10, 2021 - Present</span>  
+                <span class="position">Backend Developer</span>
+                <span class="place">Guadalajara, MX</span> 
+                <p class="tasks">I am in charge of developing software solutions for the company. Tasks like creating databases, server-side systems and more.</p>
+                <p class="tasks">I also design databases and  websites for the enterprise's needs </p>
             </div>
 
         </section>
 
         <br>
+        <h3>PROJECTS</h3>
         <hr>
         <section class="projects">
-            <h3>PROJECTS</h3>
-
             <div class="project-item">
-                <span>Febrary 2020 - June 2020</span> <br>
-                <span><strong>Incident Management System,</strong></span> <br>
-                <span>Guadalajara, MX.</span> <br>
-                <span>I collaborated in the development of a software system at CISCO. That system was made to track and control the CISCO's supply chain incidents </span>
+                <span class="project-title">Incident Management System</span> 
+                <span class="date">Febrary 2020 - June 2020</span> 
+                <span class="place">Cisco Systems. Guadalajara, MX.</span> 
+                <p class="description">I collaborated in the development of a software system at CISCO. That system was made to track and control the CISCO's supply chain incidents </p>
             </div>
         </section>
 
         <br>
+        <h3>PROFESSIONAL INTEREST</h3>
         <hr>
         <section class="profesional-interest">
-            <h3>PROFESSIONAL INTEREST</h3>
             <ul>
                 <li>
                     Software development
@@ -106,52 +114,57 @@
                     IT
                 </li>
                 <li>
-                    Team-working
+                    Technology
+                </li>
+                <li>
+                    Leadership
                 </li>
             </ul>
         </section>
 
         <br>
+        <h3>SOFTWARE</h3>
         <hr>
         <section class="softwares">
-            <h3>SOFTWARE</h3>
             <div class="software-item">
-                <span>Microsoft Word: </span> <span><strong>80 %</strong></span>
+                <span class="software-name">Microsoft Word </span> <span class="level">(Advanced)</span>
             </div>
             <div class="software-item">
-                <span>Visual Studio Code: </span> <span><strong>90 %</strong></span>
+                <span>Visual Studio Code </span> <span class="level">(Advanced)</span>
             </div>
             <div class="software-item">
-                <span>Adobe XD: </span> <span><strong>60 %</strong></span>
+                <span>Adobe XD: </span> <span class="level">(Intermediate)</span>
             </div>
 
         </section>
 
         <br>
+        <h3>LANGUAGES</h3>
         <hr>
         <section class="languages">
-            <h3>LANGUAGES</h3>
             <ul>
-                <li>Spanish: <strong>100%</strong></li>
-                <li>English: <strong>50%</strong></li>
+                <li>Spanish: <span class="level">(Native)</span></li>
+                <li>English: <span class="level">(Intermediate)</span></li>
             </ul>
         </section>
 
         <br>
+        <h3>REFERENCES</h3>
         <hr>
         <section class="references">
-            <h3>REFERENCES</h3>
             <div class="person">
-                <span>Edgar Tinoco - <strong>RH at Talent-Network</strong></span>
-                <br>
-                <span>edgar.tinoco@talent-network.org</span>
+                <span class="name">Edgar Tinoco</span>
+                <span class="position">Human Resources (HR)</span>
+                <span class="company">Talent-Network</span>
+                <span class="contact">edgar.tinoco@talent-network.org</span>
             </div>
 
             <br>
             <div class="person">
-                <span>Adán Avelar - <strong>Director of Talent Hackathon at Talent-Network</strong></span>
-                <br>
-                <span>adan.avelar@talent-network.org</span>
+                <span class="name">Adán Avelar</span>
+                <span class="position">Director of Talent Hackathon</span>
+                <span class="company">Talent-Network</span>
+                <span class="contact">adan.avelar@talent-network.org</span>
             </div>
         </section>
 
