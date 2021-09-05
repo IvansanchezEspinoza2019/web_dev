@@ -141,3 +141,43 @@ h4 {
     content: "\a";
     white-space: pre;
 }
+
+
+/****** Media queries *******/
+/* Mobile devices. */
+@media (max-width: 480px){
+    body{background-color: aqua;
+        font-size: 2rem;
+    }
+}
+
+/* iPads, Tablets. */
+@media(max-width: 768px) and (min-width: 481px){
+    body{
+        background-color: red;
+        font-size: 1.5rem;
+    }
+}
+
+/* Small screens, laptops */
+@media(max-width: 1024px) and (min-width: 769px){
+    body{
+        background-color: green;
+        font-size: 1rem;
+    }
+}
+
+/* Desktops, large screens. */
+@media(max-width: 1200px) and (min-width: 1025px){
+    body{
+        background-color: yellow;
+        font-size: 0.5rem;
+    }
+}
+
+/*Extra large screens, TV.*/
+@media(min-width: 1201px){
+    body{
+        background-color: red;
+    }
+}
