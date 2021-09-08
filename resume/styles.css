@@ -1,33 +1,14 @@
 
-body, .name-photo{
+body{
     background-color: rgb(216, 216, 216);
     font-size: 18px;
 }
-/* Photo and name */
-.name-photo{
-    position: relative;
-}
-.name-photo img{
-    border-radius: 50%;
-}
-.name-photo #name{
-    position: absolute;
-    font-weight: bold;
-    font-size: 48px;
-    top: 20px;
-    left: 300px;
-}
-.name-photo #last-name{
-    position: absolute;
-    font-size: 48px;
-    top: 70px;
-    left: 300px;
-}
+
 /* All sections and h3 headers*/
 section{
     background-color: white;
     padding: 20px;
-    padding-left: 100px;
+    padding-left: 10px;
     border-radius: 15px;
 }
 h3 {
@@ -41,15 +22,7 @@ h4 {
 }
 
 /* Education section */
-.education-item {
-    position:relative;
-}
 .education-item .title {
-    font-weight: bold;
-}
-.education-item .date {
-    position: absolute;
-    right: 20px;
     font-weight: bold;
 }
 .education-item .school-name::before{
@@ -70,15 +43,8 @@ h4 {
     margin-left: 50px;
 }
 /* Job experience*/
-.job{
-    position: relative;
-}
+
 .job .job-title{
-    font-weight: bold;
-}
-.job .date{
-    position: absolute;
-    right: 20px;
     font-weight: bold;
 }
 
@@ -87,20 +53,12 @@ h4 {
     white-space: pre;
 }
 .job .tasks{
-    margin-left: 50px;
+    margin-left: 10px;
     margin-bottom: 10px;
     margin-top: 10px
 }
 /* Projects*/
-.project-item {
-    position: relative;
-}
 .project-item .project-title{
-    font-weight: bold;
-}
-.project-item .date{
-    position: absolute;
-    right: 20px;
     font-weight: bold;
 }
 .project-item .place::before, .place::after{
@@ -109,7 +67,7 @@ h4 {
 }
 
 .project-item .description{
-    margin-left: 50px;
+    margin-left: 10px;
 }
 /* Software*/
 .software-item .software-name{
@@ -126,11 +84,161 @@ h4 {
     margin-left: 50px;
 }
 /* references */
-.person{
-    position: relative;
-}
+
 .person .name{
     font-weight: bold;
+}
+
+
+/****** Media queries *******/
+/* Mobile devices. */
+@media (min-width: 1px){
+    body{
+        background-color: rgb(58, 202, 202);  
+    }
+    /* */
+    section{
+        font-size: 1.5rem;
+    }
+    /* Image and name */
+.name-photo{
+    width: 100%;
+    padding: 0;
+    padding-left: 0;
+    background-color: transparent;
+    border-radius: 0;
+    text-align: center;
+}
+.name-photo img{
+    width: 100%;
+    max-width: 350px;
+    border-radius: 50%;
+    height: auto;
+}
+.name-photo #name{
+    font-size: 2.3rem;
+    font-weight: bold;
+}
+.name-photo #last-name{
+    font-size: 2.3rem;
+}
+.name-photo #name::after{
+    content: "\a";
+    white-space: pre;
+}
+/* Dates */
+.education-item .date {
+    margin-left: 15px;
+    font-style: italic;
+}
+.job .date{
+    margin-left: 15px;
+    font-style: italic;
+}
+.project-item .date {
+    margin-left: 15px;
+    font-style: italic;
+}
+.person .position{
+    margin-left: 15px;
+    font-style: italic;
+}
+}
+
+/* iPads, Tablets. */
+@media(max-width: 768px) and (min-width: 481px){
+    body{
+        background-color: rgba(230, 75, 75, 0.822);
+    }
+   .name-photo #name::before{
+        content: "\a";
+        white-space: pre;
+   }
+   h3{
+       font-size: 1.2rem
+   }
+   section{
+       padding-left: 50px;
+       padding-right: 50px;
+       width: 80%;
+       font-size: 1.3rem;
+       margin: auto;
+   }
+}
+
+/* Small screens, laptops */
+@media(max-width: 1024px) and (min-width: 769px){
+    body{
+        background-color: rgb(54, 197, 18);
+        font-size: 1rem;
+    }
+    /* Sections sizes and fonts*/
+section{
+    width: 70%;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: auto;
+    font-size: 1.1rem;
+
+}
+
+  /* Photo and name */
+.name-photo{
+    position: relative;
+    margin: 0%;
+    width: 45%;
+    max-width: 351px;
+}
+
+.name-photo #name{
+    width: 300px;
+    text-align: left;
+    position: absolute;
+    font-weight: bold;
+    font-size: 2.5rem;
+    top: 100px;
+    left: 380px;
+}
+.name-photo #last-name{
+    text-align: left;
+    width: 390px;
+    position: absolute;
+    font-size: 2.5rem;
+    top: 160px;
+    left: 380px;
+}
+
+/* Puts dates to right*/
+    /* Fecha educacion*/
+.education-item {
+    position:relative;
+}
+.education-item .date {
+    position: absolute;
+    right: 20px;
+    font-weight: bold;
+}
+/* Projects*/
+.project-item {
+    position: relative;
+}
+.project-item .date{
+    position: absolute;
+    right: 20px;
+    font-weight: bold;
+}
+/* work*/
+.job{
+    position: relative;
+}
+.job .date{
+    position: absolute;
+    right: 20px;
+    font-weight: bold;
+}
+/* Person*/
+.person{
+    position: relative;
 }
 .person .position{
     position: absolute;
@@ -141,43 +249,95 @@ h4 {
     content: "\a";
     white-space: pre;
 }
-
-
-/****** Media queries *******/
-/* Mobile devices. */
-@media (max-width: 480px){
-    body{background-color: aqua;
-        font-size: 2rem;
-    }
-}
-
-/* iPads, Tablets. */
-@media(max-width: 768px) and (min-width: 481px){
-    body{
-        background-color: red;
-        font-size: 1.5rem;
-    }
-}
-
-/* Small screens, laptops */
-@media(max-width: 1024px) and (min-width: 769px){
-    body{
-        background-color: green;
-        font-size: 1rem;
-    }
 }
 
 /* Desktops, large screens. */
-@media(max-width: 1200px) and (min-width: 1025px){
+@media(min-width: 1025px){
     body{
-        background-color: yellow;
-        font-size: 0.5rem;
+        background-color: rgb(211, 209, 72);
     }
+       /* Sections sizes and fonts*/
+section{
+    width: 50%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: auto;
+    font-size: 1.2rem;
+
+}
+h3{
+    width: 50%;
+    margin: auto;
+    text-align: left;
 }
 
-/*Extra large screens, TV.*/
-@media(min-width: 1201px){
-    body{
-        background-color: red;
-    }
+  /* Photo and name */
+.name-photo{
+    position: relative;
+    margin: 0%;
+    padding-left: 80px;
+    width: 20%;
+    max-width: 351px;
 }
+
+.name-photo #name{
+    width: 600px;
+    text-align: left;
+    position: absolute;
+    font-weight: bold;
+    font-size: 3rem;
+    top: 60px;
+    left: 380px;
+}
+.name-photo #last-name{
+    text-align: left;
+    width: 600px;
+    position: absolute;
+    font-size: 3rem;
+    top: 120px;
+    left: 380px;
+}
+
+/* Puts dates to right*/
+    /* Fecha educacion*/
+.education-item {
+    position:relative;
+}
+.education-item .date {
+    position: absolute;
+    right: 20px;
+    font-weight: bold;
+}
+/* Projects*/
+.project-item {
+    position: relative;
+}
+.project-item .date{
+    position: absolute;
+    right: 20px;
+    font-weight: bold;
+}
+/* work*/
+.job{
+    position: relative;
+}
+.job .date{
+    position: absolute;
+    right: 20px;
+    font-weight: bold;
+}
+/* Person*/
+.person{
+    position: relative;
+}
+.person .position{
+    position: absolute;
+    font-weight: bold;
+    right: 20px;
+}
+.person .company::before, .company::after{
+    content: "\a";
+    white-space: pre;
+}
+}
+
